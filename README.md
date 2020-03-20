@@ -1,6 +1,11 @@
 
+## Strategic Machines Demonstration
 
-### html chrome samples
+A key element of competitive advertising in a saturated social marketplace will be engaging content. Content management is a key discipline in ensuring relevant offers, accurate information and snappy engagement captures the customer's attention and promotes an action.
+
+This demonstration shows new Chrome browser capabilities with 'picture in picture' function
+
+### Other references
 
 #### https://github.com/GoogleChrome/samples
 
@@ -12,7 +17,7 @@ https://medium.com/javascript-in-plain-english/recreating-spotifys-floating-pop-
 
 https://googlechrome.github.io/samples/picture-in-picture/
 
-* Select references
+#### Other selective modern browser functions
 
 [web nfc](https://github.com/GoogleChrome/samples/tree/gh-pages/web-nfc)
 
@@ -21,10 +26,6 @@ https://googlechrome.github.io/samples/picture-in-picture/
 [push messages and notifications](https://github.com/GoogleChrome/samples/tree/gh-pages/push-messaging-and-notifications)
 
 [picture in picture](https://github.com/GoogleChrome/samples/tree/gh-pages/picture-in-picture)
-
-https://googlechrome.github.io/samples/picture-in-picture/
-
-
 
 [auto picture in picture](https://github.com/GoogleChrome/samples/tree/gh-pages/auto-picture-in-picture)
 
