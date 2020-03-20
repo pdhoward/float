@@ -1,5 +1,5 @@
 {
-  "name": "micro",
+  "name": "float",
   "version": "0.5.0",
   "repository": {
     "type": "git",
@@ -7,74 +7,13 @@
   },
   "author": "Strategic Machines",
   "license": "MIT",
-  "description": "sdk for the machine platform",
+  "description": "Picture in PIcrure demo",
   "keywords": [],
-  "engines": {
-    "node": ">= 11"
+  "engines": {    
+  },  
+  "scripts": {  
   },
-  "proxy": {
-    "/.netlify/functions": {
-      "target": "http://localhost:9000",
-      "pathRewrite": {
-        "^/\\.netlify/functions": ""
-      }
-    }
-  },
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "scripts": {
-    "👇 ABOUT-xstart-command": "💡 ILLUSTRATION ONLY start the app and server #",
-    "xstart": "npm-run-all --parallel xstart:app xstart:server",
-    "xstart:app": "http-server -c-1",
-    "xstart:server": "netlify-lambda serve functions",
-    "👇 ABOUT-build-command": "💡 build the sdk and package for access by test app",
-    "build:umd": "rimraf bundles && webpack --config webpack.config.js --progress --colors",
-    "build:es6": "rimraf dist && tsc --outDir ./dist",
-    "build": "npm run build:umd && npm run build:es6 && npm run build:styles",
-    "build:styles": "node-sass src/styles/main.scss bundles/strategicmachines-micro-sdk.min.css --output-style compressed --source-map true",
-    "bundle-stats": "npm run build:umd && webpack-bundle-analyzer bundles/stats.json",
-    "👇 ABOUT-dev-command": "💡 spin up test server on port 9000 to test netlify functions locally",
-    "devrun": "netlify-lambda serve functions",
-    "devbuild": "netlify-lambda build functions",
-    "serve": "node test/server",
-    "xprepublish": "npm run test && npm run build",
-    "lint": "tslint --config tslint.json --project tsconfig.json",
-    "pretest": "npm run lint",
-    "test": "mocha --opts tests/mocha.opts",
-    "👇 ABOUT-local": "💡 run netlify web app local with local lambda functions",
-    "local": "npm-run-all --parallel devrun serve"
-  },
-  "dependencies": {
-    "compression": "^1.7.4",
-    "dotenv": "^8.2.0",
-    "mongodb": "^3.5.5",
-    "netlify-lambda": "^1.4.3"
-  },
-  "devDependencies": {
-    "@types/chai": "^4.2.6",
-    "@types/mocha": "^5.2.7",
-    "@types/sinon": "^7.5.1",
-    "chai": "^4.2.0",
-    "chalk": "^2.4.2",
-    "cors": "^2.8.5",
-    "dotenv": "^4.0.0",
-    "express": "^4.16.4",
-    "mocha": "^6.2.2",
-    "mocha-jsdom": "^2.0.0",
-    "node-fetch": "^2.6.0",
-    "node-sass": "^4.13.0",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "3.0.2",
-    "scss-compile": "^0.1.7",
-    "sinon": "^7.5.0",
-    "ts-loader": "^5.3.3",
-    "ts-node": "^8.5.4",
-    "tslint": "^5.20.1",
-    "tslint-config-airbnb": "^5.11.2",
-    "typescript": "^3.8.3",
-    "webpack": "^4.41.2",
-    "webpack-auto-inject-version": "^1.2.2",
-    "webpack-bundle-analyzer": "^3.6.0",
-    "webpack-cli": "^3.3.10"
+  "dependencies": {   
   }
+ 
 }
